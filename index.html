@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Senhor das Rotas Infernais — Menu</title>
+<style>
+:root{--bg:#07080c;--p:#101522;--p2:#171f33;--txt:#f2f5ff;--mut:#a9b3cf;--gold:#ffd36b;--red:#ff445f;--blue:#63d8ff;--green:#55ef9f;--line:#303a55}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at top,#1b2440 0,#07080c 48%,#020307);color:var(--txt);font-family:Arial,Helvetica,sans-serif;display:flex;align-items:center;justify-content:center;padding:18px}.wrap{max-width:980px;width:100%;}.hero{text-align:center;margin-bottom:18px}.hero h1{color:var(--gold);font-size:34px;margin:0 0 8px;text-shadow:0 0 18px #ffb30044}.hero p{color:var(--mut);margin:0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}.card{background:linear-gradient(180deg,var(--p),#0b0f1a);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 8px 26px #0009}.card h2{margin:0 0 10px;color:var(--gold)}.card p{color:var(--mut);line-height:1.45}.btn{display:block;text-align:center;text-decoration:none;margin-top:14px;padding:14px;border-radius:13px;font-weight:900;color:var(--txt);border:1px solid var(--line);background:#202a42}.offline{background:#3b2a10;border-color:#9a6b18;color:#ffe19a}.online{background:#102b3b;border-color:#1f789f;color:#dff8ff}.tiny{font-size:13px;color:var(--mut);margin-top:16px;text-align:center}.ok{color:var(--green)}.warn{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>👑 Senhor das Rotas Infernais</h1>
+    <p>Escolha como deseja jogar.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h2>🎮 Jogar Offline</h2>
+      <p>Modo atual do jogo. Funciona sozinho, salva no navegador e não precisa de conta.</p>
+      <p class="ok">Ideal para quem quer jogar sem depender de servidor.</p>
+      <a class="btn offline" href="offline.html">Entrar no modo offline</a>
+    </div>
+    <div class="card">
+      <h2>🌍 Modo Online</h2>
+      <p>Base nova para login, ranking mundial, jornal online, fórum, alianças, guerras, empresas e anti-trapaça.</p>
+      <p class="warn">Precisa configurar Supabase para ficar online real.</p>
+      <a class="btn online" href="online.html">Entrar no modo online</a>
+    </div>
+  </div>
+  <div class="tiny">O offline foi mantido separado para não quebrar o jogo atual.</div>
+</div>
+</body>
+</html>
